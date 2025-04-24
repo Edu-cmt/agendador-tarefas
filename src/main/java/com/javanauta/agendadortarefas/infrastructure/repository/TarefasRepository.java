@@ -13,4 +13,5 @@ public interface TarefasRepository extends MongoRepository<Tarefas, String> {
     List<Tarefas> findByDataEventoBetween(LocalDateTime dataInicial, LocalDateTime dataFinal);
 
     List<Tarefas> findByEmailUsuario(String email);
+
 }
